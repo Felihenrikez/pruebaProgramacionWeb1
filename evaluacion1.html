@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquiler de Equipos BotasVI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 50px;
+        }
+        .container {
+            padding: 20px;
+            margin-bottom: 60px; /* Añadir margen inferior para el espacio del footer */
+        }
+        .catalogo {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .catalogo-item {
+            text-align: center;
+            width: 45%;
+        }
+        .catalogo-item img {
+            width: 50%; /* Ajusta el ancho de la imagen al 50% del contenedor padre */
+            height: auto; /* Mantener la proporción de la imagen */
+        }
+        form {
+            margin-top: 20px;
+        }
+        form input, form select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        form button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Alquiler de Equipos BotasVI</h1>
+    <img src="image/logo.png" style="width: 5%; height: auto;" alt="Logo de Alquiler de Equipos XYZ">
+</header>
+
+<div class="container">
+    <section class="introduccion">
+        <h2>Sobre Nosotros</h2>
+        <p>Hola! ahora que trabajo desde casa mis gatas no pueden hacer fiestas por lo que ahora arriendan sus juguetes para fiestas de otros.</p>
+    </section>
+
+    <section class="catalogo">
+        <div class="catalogo-item">
+            <h3>Equipo de Sonido Pro</h3>
+            <img src="image/equipoSonido.png" alt="Equipo de Sonido Pro">
+            <p>Potente sistema de sonido con 1000W de potencia. Ideal para eventos grandes.</p>
+        </div>
+        <div class="catalogo-item">
+            <h3>Luces LED RGB</h3>
+            <img src="image/luces.png" alt="Luces LED RGB">
+            <p>Sistema de iluminación LED con múltiples efectos y colores. Perfecto para crear ambientes increíbles.</p>
+        </div>
+    </section>
+
+    <section class="reserva">
+        <h2>Reserva de Equipos</h2>
+        <form id="formularioReserva" method="post">
+            <label for="fecha">Fecha del Evento:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="dias">Cantidad de Días:</label>
+            <input type="number" id="dias" name="dias" min="1" required>
+
+            <button type="submit">Enviar Reserva</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>Síguenos en:</p>
+    <a href="https://facebook.com" target="_blank">Facebook</a>
+    <a href="https://twitter.com" target="_blank">Twitter</a>
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+</footer>
+
+</body>
+</html>
